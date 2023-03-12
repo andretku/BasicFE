@@ -1,0 +1,15 @@
+h1 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+}
+p {
+    width: 500px;
+    border-radius: 20px;
+    background-color: #34495E;
+    padding: 21px;
+    color: white;
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+}
+

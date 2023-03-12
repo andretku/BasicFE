@@ -1,0 +1,70 @@
+* {
+    /* всегда задаем, чтоб страница была от края до края */
+    margin: 0;
+    padding: 0;
+}
+
+table {
+   margin: 10px;
+   width: 400px;
+   text-align: center;
+}
+
+table, tr, td, th {
+    border: 1px solid blue;
+     /*делает границы слитные*/
+     border-collapse: collapse;
+     padding: 20px;
+}
+
+/* в css списки ol и ul пожно приравнять, т.е. если им поставить один стиль, то и там, и там будет показыватьсяч одинаково */
+ol, ul {
+    list-style: disk;
+    /* list-style: decimal; */
+}
+
+/* сделать таблицу полосатой */
+/* не задавать класс через одну строку, а использовать "детский псевдокласс" */
+/* N-th child - функция, в скобках которой задаем число или переменную
+2n:
+0 => 2 * 0 = 0
+1 => 2 * 1 = 2
+2 => 2 * 2 = 4
+
+table tr:nth-child(2n){
+    background-color: green;
+}
+/* even - четное
+    odd - нечетное */
+/* table tr:nth-child(odd){
+    background-color: lightblue;
+}
+table tr:last-child{
+    background-color: black;
+    color: wheat;
+}
+table tr:first-child{
+    background-color: black;
+    color: white;
+} */
+
+/* Закрашиваем каждую 4 строку */
+/* table tr:nth-child(4n-3){
+    background-color: yellow;
+}
+table tr:nth-child(4n-2){
+    background-color: blue;
+}
+table tr:nth-child(4n-1){
+    background-color: green;
+}
+table tr:nth-child(4n){
+    background-color: red;
+} */
+
+/* шахматная доска */
+table tr:nth-child(odd) td:nth-child(odd), 
+table tr:nth-child(even) td:nth-child(even) {
+    background-color: black;
+}
+

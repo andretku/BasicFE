@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+p {
+    font-size: 14px;
+    color: rgb(255, 161, 161);
+    border: 2px solid black;
+    margin: 20px;
+    padding: 10px;    
+}
+
+div {
+    border: 5px dashed burlywood;
+    /* padding, margin - top left bottom right */
+    padding: 20px 10px;
+    margin: 20px 10px;
+}
+
+.post {
+    background-color: lightblue;
+}
+
+.post1 {
+    border: 5px dotted fuchsia;
+}
+
+.post2 {
+    border: 5px solid black;
+}
+
+.post2 p {
+    color: darkgreen;
+}
+
+.post3 p {
+    color: red;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.post h2 {
+    margin-bottom: 20px;
+}
+
+.post img {
+    width: 300px;
+    display: block;
+}
+
+.post a {
+    display: block;
+}
